@@ -1,3 +1,5 @@
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,9 +39,9 @@ const PROJECTS = [
 
 export const Projects = () => {
     return (
-        <div className="w-full border-none">
-            <Card className="w-full p-4 flex flex-col gap-4">
-            <h2 className="font-caption text-4xl text-primary py-4">Projets</h2>
+        <div className="max-w-6xl mx-auto pt-5 pb-10">
+            <Card className="w-full p-4 flex flex-col gap-4 border-none bg-card-white">
+            <h2 className="font-caption font-bold text-4xl text-white py-12">Projets</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     {PROJECTS.map((project, index) => (
                         <div key={index} className="flex flex-col gap-3">
@@ -52,14 +54,30 @@ export const Projects = () => {
                                     height={600}
                                 />
                             </Link>
-                            <div className="mt-2">
-                                <p className="text-lg font-bold">{project.title}</p>
-                                <p className="text-muted-foreground">{project.description}</p>
-                                <p className="mt-4 text-lg text-primary">Difficulté & Solution </p>
-                                <p className="text-muted-foreground">{project.difficulte}</p>
-                                <p className="text-muted-foreground">{project.solution}</p>
-                                <Link href={project.urlGithub} target="_blank" className="hover:text-primary">Voir sur GitHub</Link>
+
+                            <div className="mt-3">
+                                <h3 className="text-lg text-accent text-font-bold">{project.title}</h3>
+                                <p className="text-muted">{project.description}</p> 
+                                <Button asChild className="text-secondary hover:text-white">
+                                    <a href={project.urlGithub} target="_blank">Voir le repo sur GitHub</a>
+                                </Button>
                             </div>
+
+                            <div className="mt-5">    
+                                <Accordion type="single" collapsible>
+                                    <AccordionItem value="1">
+                                        <AccordionTrigger>
+                                            <h4 className="text-lg text-accent">Difficulté & Solution</h4>
+                                        </AccordionTrigger>
+                                        <AccordionContent>
+                                            <p className="text-muted">{project.difficulte}</p>
+                                            <p className="text-muted">{project.solution}</p>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </Accordion>                                
+                            </div>
+
+
                         </div>
                     ))}
                 </div>

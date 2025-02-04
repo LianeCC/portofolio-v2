@@ -24,7 +24,7 @@ export const Footer = () => {
   return (
     <footer className="py-8">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-semibold text-center mb-4 p-4">Contact</h2>
+        <h3 className="text-3xl font-semibold text-center mb-4 p-4">Contact</h3>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 mx-auto">
           <button
             onClick={handleCopy}

@@ -1,10 +1,10 @@
-import { SectionComponent } from "./Section";
+import { SectionComponentBlack } from "./SectionBlack";
 import { Projects } from "./statuscontent/Projects";
 
 export const Status = () => {
     return (
-        <SectionComponent className="flex flex-col gap-10">
+        <SectionComponentBlack className="flex flex-col gap-10">
             <Projects />
-        </SectionComponent>
+        </SectionComponentBlack>
     );
 };

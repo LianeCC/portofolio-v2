@@ -20,7 +20,7 @@ export default function Home() {
         <Skill />
         <Spacing size="md" />
         <MoreAboutMe />
-        <Spacing size="md" />
+        <Spacing size="sm" />
         <Footer />
       </main>
       </RootLayout>

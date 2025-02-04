@@ -23,7 +23,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className={cn("sticky top-0 py-5 backdrop-blur-lg z-10 transition-colors duration-100", isScrolled ? "bg-primary/40" : "bg-primary/10")}>
+        <header className={cn("sticky top-0 py-5 backdrop-blur-lg z-10 transition-colors duration-100", isScrolled ? "bg-secondary/40" : "border-b-[1px]")}>
             <SectionComponent className="flex items-baseline">
                 <h1 className="text-4xl text-foreground">
                     LC²
