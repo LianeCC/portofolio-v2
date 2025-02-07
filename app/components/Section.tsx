@@ -8,7 +8,7 @@ interface SectionComponentProps {
 
 export const SectionComponent = (props: PropsWithChildren<SectionComponentProps>) => {
     return (
-        <section id={props.id} className={cn("max-w-6xl px-4 m-auto", props.className)}>
+        <section id={props.id} className={cn("max-w-6xl px-8 m-auto", props.className)}>
             {props.children}
         </section>
     );

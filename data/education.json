@@ -1,0 +1,23 @@
+[
+    {
+        "image": "/logos/logoOpenclassrooms.png",
+        "title": "Développeur Web",
+        "description": "OpenClassrooms",
+        "date": "février 2025",
+        "url": "https://openclassrooms.com/fr/paths/899-developpeur-web"
+    },
+    {
+        "image": "/logos/logoOpenclassrooms.png",
+        "title": "Autodidacte",
+        "description": "En perpétuel apprentissage",
+        "date": "depuis 2017",
+        "url": "https://openclassrooms.com"
+    },
+    {
+        "image": "/logos/logoIAE.png",
+        "title": "MSc Marketing & Management des services",
+        "description": "IAE d'Aix en Provence",
+        "date": "septembre 2016",
+        "url": "https://iae-aix.univ-amu.fr/fr/programmes/organisation-msc/msc2/msc-2-management-specialisation-management-marketing-services"
+    }
+]

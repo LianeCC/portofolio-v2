@@ -8,8 +8,10 @@ interface SectionComponentBlackProps {
 
 export const SectionComponentBlack = (props: PropsWithChildren<SectionComponentBlackProps>) => {
     return (
-        <section id={props.id} className={cn("px-4 m-auto bg-black", props.className)}>
-            {props.children}
+        <section id={props.id} className="w-full bg-black">
+            <div className={cn("max-w-6xl px-8 m-auto", props.className)}>
+                {props.children}
+            </div>
         </section>
     );
 };

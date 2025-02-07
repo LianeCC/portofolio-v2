@@ -24,19 +24,19 @@ export const Footer = () => {
   return (
     <footer className="py-8">
       <div className="max-w-3xl mx-auto px-4">
-        <h3 className="text-3xl font-semibold text-center mb-4 p-4">Contact</h3>
+        <h3 className="text-3xl font-semibold text-center mb-4">Contact</h3>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 mx-auto">
           <button
             onClick={handleCopy}
-            className="flex bg-primary/50 text-white px-4 py-2 rounded-md hover:bg-primary/80 transition flex items-center gap-2"
+            className="flex bg-black text-white px-4 py-2 rounded-md hover:bg-primary/80 transition flex items-center gap-2"
           >
             {copied ? "Copié dans le presse-papier !" : "lianecoupatdev@gmail.com"}
-            <Mail size={24} className={copied ? "text-secondary" : "text-white"} />
+            <Mail size={24} className={copied ? "text-accent" : "text-white"} />
           </button>
           <a
             href="/cvcoupat/cv-coupat-dev.pdf"
             download
-            className="inline-block bg-primary/50 text-white px-4 py-2 rounded-md hover:bg-primary/80 transition"
+            className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-primary/80 transition"
           >
             Téléchargez mon CV
           </a>
@@ -48,19 +48,19 @@ export const Footer = () => {
           <form
             action="https://formspree.io/f/xyzkwbdb"
             method="POST"
-            className="max-w-lg mx-auto space-y-4 bg-gray-800 p-6 rounded-lg"
+            className="max-w-lg mx-auto space-y-4 bg-black p-6 rounded-lg"
           >
             <div>
               <Label htmlFor="email" className="block text-sm font-medium text-white">
                 Email
               </Label>
-              <Input type="email" name="email" id="email" className="bg-accent/20 mt-1 block w-full" />
+              <Input type="email" name="email" id="email" className="bg-[#cee1e1] mt-1 block w-full transition-all duration-300 focus:bg-white" />
             </div>
             <div>
               <Label htmlFor="message" className="block text-sm font-medium text-white">
                 Message
               </Label>
-              <Textarea name="message" id="message" rows={4} className="bg-accent/20 mt-1 block w-full" />
+              <Textarea name="message" id="message" rows={4} className="bg-[#cee1e1] mt-1 block w-full transition-all duration-300 focus:bg-white" />
             </div>
             <div className="text-center">
               <Button type="submit" className="bg-primary/50 text-white px-4 py-2 rounded-md hover:bg-primary/80 transition">
@@ -70,7 +70,7 @@ export const Footer = () => {
           </form>
         </div>
         <div className="pt-10 text-center">
-          <p>Ce site a été réalisé à la main et ne collecte aucunes données. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code>GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
+          <p>Ce site a été réalisé à la main et ne collecte aucunes données. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code className="text-primary">GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
           <br/>
           <p>Développé avec <span className="line-through">amour</span> Next, hébergé sur Vercel.</p>
         </div>

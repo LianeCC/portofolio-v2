@@ -1,0 +1,20 @@
+[
+    {
+        "logo" : "/logos/logoWamCrop.png",
+        "title" : "Directrice générale",
+        "description" : "Gestion stratégique et opérationnelle - PME de 10 salariés",
+        "date" : "2020 à 2024"
+    },
+    {
+        "logo" : "/logos/logoWamCrop.png",
+        "title" : "Chef de Produit & Formation",
+        "description" : "Gestion des produits en France et à l'international de 1300 références",
+        "date" : "2017 à 2020"
+    },
+    {
+        "logo" : "/logos/logoBouyguesimmoCrop.png",
+        "title" : "Assistante Grandes Affaires & Diversifications",
+        "description" : "Réponse à concours sur les produits Résidences",
+        "date" : "2015 à 2016"
+    }
+]

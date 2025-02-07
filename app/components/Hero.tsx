@@ -22,12 +22,12 @@ export const Hero = () => {
 
     return (
         <SectionComponent className="flex max-md:flex-col items-start gap-6">
-            <div className="flex-[3] w-full flex flex-col gap-2">
-                <h2 className="text-8xl text-primary">Liane Coupat Candoulives</h2>
+            <div className="flex-[3] w-full flex flex-col gap-2 text-center lg:text-left ">
+                <h2 className="text-6xl lg:text-8xl text-primary">Liane Coupat Candoulives</h2>
                 <h3 className="text-4xl font-bold">Web Developer</h3>
                 <p className="text-justify">Développeuse web passionnée, je conçois des sites modernes et intuitifs, alliant esthétique, performance et innovation.</p>
                 <Link href="#moreaboutme" onClick={handleScroll}>
-                    <p className="text-primary hover:underline">En savoir plus sur moi</p>
+                    <p className="text-accent hover:text-secondary">En savoir plus sur moi</p>
                 </Link>
             </div>
         </SectionComponent>

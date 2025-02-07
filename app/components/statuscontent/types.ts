@@ -7,15 +7,17 @@ export type ProjectProps = {
     difficulte: string;
     solution: string;
 };
+
 export type FormationProps = {
-    Image: string;
+    image: string;
     title: string;
     description: string;
     date: string;
     url: string;
 };
+
 export type ExperienceProps = {
-    Logo: string;
+    logo: string;
     title: string;
     description: string;
     date: string;
