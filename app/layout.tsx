@@ -1,19 +1,13 @@
-import { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import Seo from "./components/Seo";
 
-export const metadata: Metadata = {
-  title: "Liane COUPAT CANDOULIVES - Web Developer",
-  description: "Mon portfolio",
-};
-
-export default function Layout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <Seo />
+      </head>
       <body className={cn("font-sans h-full bg-background text-foreground")}>
         {children}
       </body>
