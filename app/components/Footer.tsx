@@ -22,7 +22,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="py-8">
+    <footer id="contact" className="py-8">
       <div className="max-w-3xl mx-auto px-4">
         <h3 className="text-3xl font-semibold text-center mb-4">Contact</h3>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 mx-auto">
@@ -70,7 +70,7 @@ export const Footer = () => {
           </form>
         </div>
         <div className="pt-10 text-center">
-          <p>Ce site a été réalisé à la main et ne collecte aucunes données. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code className="text-primary">GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
+          <p>Ce site ne collecte aucune donnée. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code className="text-primary">GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
           <br/>
           <p>Développé avec <span className="line-through">amour</span> Next, hébergé sur Vercel.</p>
         </div>

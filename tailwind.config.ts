@@ -1,3 +1,4 @@
+import {heroui} from '@heroui/theme';
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from 'tailwindcss-animate';
 
@@ -8,6 +9,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@heroui/theme/dist/components/(button|link|navbar|ripple|spinner).js"
   ],
 
   theme: {
@@ -83,7 +85,7 @@ const config: Config = {
           '0%': { transform: 'translateY(0px)' },
           '100%': { transform: 'translateY(150px)' },
         },
-		"scroll-left": {
+		    "scroll-left": {
             "0%": { transform: "translateX(100%)" },
             "100%": { transform: "translateX(-100%)" },
         },
@@ -91,17 +93,23 @@ const config: Config = {
             "0%": { transform: "translateX(-100%)" },
             "100%": { transform: "translateX(100%)" },
         },
+        "marquee" : {
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(-50%)" }, // Décalage pour boucle infinie
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-vertical': 'slide-vertical 1.5s linear infinite',
-		"scroll-left": "scroll-left 10s linear infinite",
+		    "scroll-left": "scroll-left 10s linear infinite",
         "scroll-right": "scroll-right 10s linear infinite",
+        "marquee" : "marquee 10s linear infinite",
+
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate,heroui()],
 };
 
 export default config;

@@ -39,6 +39,11 @@ h1, h2 {
   font-family: "GastrolineSignature", cursive;
 }
 
+.group:hover .pause-on-hover {
+  animation-play-state: paused;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['api.apiflash.com'],
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;

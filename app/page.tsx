@@ -16,9 +16,9 @@ export default function Home() {
         <Hero />
         <Spacing size="sm" />
         <Status />
-        <Spacing size="md" />
+        <Spacing size="sm" />
         <Skill />
-        <Spacing size="md" />
+        <Spacing size="sm" />
         <MoreAboutMe />
         <Spacing size="sm" />
         <Footer />
