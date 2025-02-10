@@ -70,7 +70,7 @@ export const Footer = () => {
           </form>
         </div>
         <div className="pt-10 text-center">
-          <p>Ce site ne collecte aucune donnée. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code className="text-primary">GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
+          <p>Ce site ne collecte aucune donnée. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portofolio-v2"><Code className="text-primary">GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
           <br/>
           <p>Développé avec <span className="line-through">amour</span> Next, hébergé sur Vercel.</p>
         </div>
