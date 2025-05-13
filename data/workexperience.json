@@ -1,20 +1,26 @@
 [
     {
-        "logo" : "/logos/logoWamCrop.png",
-        "title" : "Directrice générale",
-        "description" : "Gestion stratégique et opérationnelle - PME de 10 salariés",
-        "date" : "2020 à 2024"
+        "logo" : "/logos/logoGadc.jpg",
+        "title" : "Dev Full Stack - GLOBAL ADC",
+        "description" : "Gestion de projet et développement web",
+        "date" : "mars 2025 à sept 2026"
     },
     {
         "logo" : "/logos/logoWamCrop.png",
-        "title" : "Chef de Produit & Formation",
+        "title" : "Directrice générale - WAM",
+        "description" : "Gestion stratégique et opérationnelle",
+        "date" : "janv 2020 à dec 2024"
+    },
+    {
+        "logo" : "/logos/logoWamCrop.png",
+        "title" : "Chef de Produit & Formation - WAM",
         "description" : "Gestion des produits en France et à l'international de 1300 références",
-        "date" : "2017 à 2020"
+        "date" : "juill 2017 à janv 2020"
     },
     {
         "logo" : "/logos/logoBouyguesimmoCrop.png",
-        "title" : "Assistante Grandes Affaires & Diversifications",
+        "title" : "Ass. Grandes Affaires & Diversifications - BOUYGUES IMMO",
         "description" : "Réponse à concours sur les produits Résidences",
-        "date" : "2015 à 2016"
+        "date" : "sept 2015 à déc 2016"
     }
 ]

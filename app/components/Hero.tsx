@@ -25,7 +25,7 @@ export const Hero = () => {
             <div className="flex-[3] w-full flex flex-col gap-2 text-center lg:text-left ">
                 <h2 className="text-6xl lg:text-8xl text-primary">Liane Coupat Candoulives</h2>
                 <h3 className="text-4xl font-bold">Web Developer</h3>
-                <p className="text-justify">Développeuse web passionnée, je conçois des sites modernes et intuitifs, alliant esthétique, performance et innovation.</p>
+                <p className="text-justify">Développeuse web passionnée, je conçois de A à Z vos projets (sites, applications, logiciels...) en alliant esthétisme, performance et innovation.</p>
                 <Link href="#moreaboutme" onClick={handleScroll}>
                     <p className="text-accent hover:text-secondary">En savoir plus sur moi</p>
                 </Link>

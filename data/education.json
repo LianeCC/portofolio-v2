@@ -1,5 +1,12 @@
 [
     {
+        "image": "/logos/logoDatascientest.png",
+        "title": "Software Engineer",
+        "description": "DataScientest",
+        "date": "septembre 2026",
+        "url": "https://datascientest.com/formation-software-engineer-alternance"
+    },
+    {
         "image": "/logos/logoOpenclassrooms.png",
         "title": "Développeur Web",
         "description": "OpenClassrooms",

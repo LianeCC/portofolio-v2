@@ -12,6 +12,7 @@ export const Projects = () => {
     <div className="pt-5 pb-10">
       <Card className="w-full flex flex-col gap-4 border-none bg-card-white">
         <h2 className="font-caption font-bold text-4xl text-white py-5 lg:py-12">Projets</h2>
+        <p className="italic text-white">Deux projets sont en cours de développement (application et site vitrine)</p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-5">
           {PROJECTS.map((project, index) => (
             <Project key={index} {...project} />
